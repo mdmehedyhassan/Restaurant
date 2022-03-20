@@ -1,3 +1,6 @@
+.test{
+  color: #8080804b;
+}
 .link-btn-style{
   background-color: #eb6434 ;
   text-decoration: none;
@@ -11,6 +14,24 @@
   background-color: #fff;
   color: #eb6434;
 }
-.test{
-  color: #8080804b;
+
+.img-wrapper {  
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden; 
+}
+
+.inner-img {
+  transition: .5s;
+}
+
+.inner-img:hover {
+  transform: scale(1.2);
+}
+
+/* Other styling elements, that are not necessary for the example */
+
+.img-wrapper {
+  display: inline-block;
+  box-sizing: border-box;
 }
