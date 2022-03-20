@@ -11,16 +11,16 @@ const Review = () => {
             <div className="container" style={{ padding: '80px 0' }}>
                 <div className="row">
                     <div className="col-md-6">
-                        <h1 style={{ fontWeight: 800, }}>
+                        <h1 data-aos="fade-up" data-aos-duration="3000" style={{ fontWeight: 800, }}>
                             What our <br />
                             <span style={{ color: '#eb6434' }}>customers</span> say
                         </h1>
                     </div>
                     <div className="col-md-6 text-end">
-                        <h5 style={{ color: '#eb6434' }}>
+                        <h5 data-aos="fade-up" data-aos-duration="1500" style={{ color: '#eb6434' }}>
                             <FontAwesomeIcon icon={faStar} />  <FontAwesomeIcon icon={faStar} /> <FontAwesomeIcon icon={faStar} /> <FontAwesomeIcon icon={faStar} /> <FontAwesomeIcon icon={faStar} />
                         </h5>
-                        <p>Average customer rating 4.82 (253 votes)</p>
+                        <p data-aos="fade-up" data-aos-duration="3000">Average customer rating 4.82 (253 votes)</p>
                     </div>
                 </div>
 

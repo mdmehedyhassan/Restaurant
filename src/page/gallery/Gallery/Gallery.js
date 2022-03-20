@@ -6,7 +6,7 @@ const Gallery = () => {
     return (
         <div>
             <div className="container mt-5 mb-5">
-                <h1 style={{ fontWeight: 700, fontSize: 70 }}>Gallery</h1>
+                <h1 data-aos="fade-up" data-aos-duration="2000" style={{ fontWeight: 700, fontSize: 70 }}>Gallery</h1>
             </div>
             <GalleryPic/>
             <Book/>

@@ -19,7 +19,7 @@ const GalleryPic = () => {
                     {
                         imageArray.map((img, index) => <div key={index} img={img} className="col-xl-4 col-sm-6 col-12">
                             <div className="img-wrapper m-2">
-                                <img className="inner-img w-100" src={img} alt="" />
+                                <img data-aos="flip-left" data-aos-duration="2000" className="inner-img w-100" src={img} alt="" />
                             </div>
                         </div>)
                     }
