@@ -4,7 +4,7 @@
     font-weight: 600;
     text-decoration: none;
 }
-.nav-link-style:hover{
+.nav-link-style:hover, .active-btn-style{
    color: #eb6434;
    border-bottom: 5px solid #eb6434;
 }

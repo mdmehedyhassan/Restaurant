@@ -4,55 +4,65 @@ import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import brandImg2 from '../../../images/icon/brand-2.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleInfo, faHeadset, faHouse, faTableCellsLarge } from '@fortawesome/free-solid-svg-icons';
+import { faImage } from '@fortawesome/free-regular-svg-icons';
 
 const drawerWidth = 120;
 
 function HeaderNav(props) {
+  const location = useLocation();
+  const path = location.pathname;
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
-
+  //active-btn-style
   const drawer = (
-    <div style={{backgroundColor: '#2b2b2b', height: '250%'}}>
-      <Toolbar />
-      <Divider />
+    <div style={{ backgroundColor: '#2b2b2b', height: '250%' }}>
+      <div className="text-center">
+        <img style={{ width: '50%', padding: '10px 0' }} src={brandImg2} alt="" />
+      </div>
       <List>
-        <Link to="/home" className="nav-link-style">
-          Home
+        <Link to="/home" className={`nav-link-style ${path === '/home' ? 'active-btn-style' : ''} `}>
+          <FontAwesomeIcon icon={faHouse} /> Home
         </Link>
       </List>
       <List>
-        <Link to="/about" className="nav-link-style">
-          About us
+        <Link to="/about" className={`nav-link-style ${path === '/about' ? 'active-btn-style' : ''} `}>
+          <FontAwesomeIcon icon={faCircleInfo} /> About us
         </Link>
       </List>
       <List>
-        <Link to="/menu" className="nav-link-style">
-          Menu
+        <Link to="/menu" className={`nav-link-style ${path === '/menu' ? 'active-btn-style' : ''} `}>
+          <FontAwesomeIcon icon={faTableCellsLarge} /> Menu
         </Link>
       </List>
       <List>
-        <Link to="/gallery" className="nav-link-style">
-          Gallery
+        <Link to="/gallery" className={`nav-link-style ${path === '/gallery' ? 'active-btn-style' : ''} `}>
+          <FontAwesomeIcon icon={faImage} /> Gallery
         </Link>
       </List>
       <List>
-        <Link to="/contact" className="nav-link-style">
-          Contact us
+        <Link to="/contact" className={`nav-link-style ${path === '/contact' ? 'active-btn-style' : ''} `}>
+          <FontAwesomeIcon icon={faHeadset} /> Contact us
         </Link>
       </List>
-
+      <List>
+        <a href="https://github.com/mdmehedyhassan/restaurant" target="_blank" rel="noopener noreferrer" className="mt-2 btn btn-outline-light">
+          Github code
+        </a>
+      </List>
     </div>
   );
 
@@ -79,7 +89,7 @@ function HeaderNav(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" style={{fontWeight: 800}}  noWrap component="div">
+          <Typography variant="h6" style={{ fontWeight: 800 }} noWrap component="div">
             Restaurant
           </Typography>
         </Toolbar>
