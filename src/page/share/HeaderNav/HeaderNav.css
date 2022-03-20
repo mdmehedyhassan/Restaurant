@@ -1,0 +1,10 @@
+.nav-link-style{
+    color: #e4e4e4;
+    padding: 5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.nav-link-style:hover{
+   color: #eb6434;
+   border-bottom: 5px solid #eb6434;
+}

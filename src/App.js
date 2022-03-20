@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { Box, Toolbar } from '@mui/material';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Home from './page/home/Home/Home';
+import HeaderNav from './page/share/HeaderNav/HeaderNav';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <Box sx={{ display: 'flex' }}>
+        <HeaderNav />
+        <Box
+          component="main"
+          sx={{ flexGrow: 1, p: 1, width: { sm: `calc(100% - ${120}px)` } }}
         >
-          Learn React
-        </a>
-      </header>
+          <Toolbar/>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+
+        </Box>
+      </Box>
     </div>
   );
 }
