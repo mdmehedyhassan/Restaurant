@@ -28,27 +28,27 @@ function HeaderNav(props) {
       <Toolbar />
       <Divider />
       <List>
-        <Link to="/" className="nav-link-style">
+        <Link to="/home" className="nav-link-style">
           Home
         </Link>
       </List>
       <List>
-        <Link to="/" className="nav-link-style">
+        <Link to="/about" className="nav-link-style">
           About us
         </Link>
       </List>
       <List>
-        <Link to="/" className="nav-link-style">
+        <Link to="/menu" className="nav-link-style">
           Menu
         </Link>
       </List>
       <List>
-        <Link to="/" className="nav-link-style">
+        <Link to="/gallery" className="nav-link-style">
           Gallery
         </Link>
       </List>
       <List>
-        <Link to="/" className="nav-link-style">
+        <Link to="/contact" className="nav-link-style">
           Contact us
         </Link>
       </List>
@@ -66,6 +66,7 @@ function HeaderNav(props) {
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
+          backgroundColor: 'gray'
         }}
       >
         <Toolbar>
