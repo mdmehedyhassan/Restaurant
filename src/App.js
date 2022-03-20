@@ -2,6 +2,7 @@ import { Box, Toolbar } from '@mui/material';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './page/about/About/About';
+import Contact from './page/contact/Contact/Contact';
 import Gallery from './page/gallery/Gallery/Gallery';
 import Home from './page/home/Home/Home';
 import Menu from './page/menu/Menu/Menu';
@@ -24,6 +25,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer/>
         </Box>

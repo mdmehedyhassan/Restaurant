@@ -17,7 +17,7 @@ const GalleryPic = () => {
             <div className="container mt-5 mb-5">
                 <div className="row">
                     {
-                        imageArray.map((img, index) => <div key={index} img={img} className="col-md-4">
+                        imageArray.map((img, index) => <div key={index} img={img} className="col-xl-4 col-sm-6 col-12">
                             <div className="img-wrapper m-2">
                                 <img className="inner-img w-100" src={img} alt="" />
                             </div>
