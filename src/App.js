@@ -1,6 +1,7 @@
 import { Box, Toolbar } from '@mui/material';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import About from './page/about/About/About';
 import Home from './page/home/Home/Home';
 import Footer from './page/share/Footer/Footer';
 import HeaderNav from './page/share/HeaderNav/HeaderNav';
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
           </Routes>
           <Footer/>
         </Box>
