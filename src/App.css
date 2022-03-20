@@ -28,10 +28,3 @@
 .inner-img:hover {
   transform: scale(1.2);
 }
-
-/* Other styling elements, that are not necessary for the example */
-
-.img-wrapper {
-  display: inline-block;
-  box-sizing: border-box;
-}

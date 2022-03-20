@@ -17,7 +17,9 @@ const GalleryMini = () => {
                     </div>
                 </div>
                 <div className="col-md-7">
-                    <img className="w-100" style={{ borderRadius: 10 }} src={cover5} alt="" />
+                    <div className="img-wrapper">
+                        <img className="w-100 inner-img" style={{ borderRadius: 10 }} src={cover5} alt="" />
+                    </div>
                 </div>
             </div>
         </div>
