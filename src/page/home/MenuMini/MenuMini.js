@@ -15,14 +15,14 @@ const MenuMini = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-7" style={{ padding: '100px 10px 190px' }}>
-                        <h1 data-aos="fade-down" data-aos-duration="1000" style={{ color: '#eb6434', fontWeight: 700 }}>Menu</h1>
+                        <h1 data-aos="fade-down" data-aos-duration="2000" style={{ color: '#eb6434', fontWeight: 700 }}>Menu</h1>
                         <h5 data-aos="fade-down" data-aos-duration="2000" className="fw-bolder mt-3 mb-3">Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi.</h5>
                         <p data-aos="fade-down" data-aos-duration="3000" style={{ textAlign: 'justify', margin: '30px 0 65px 0' }}>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus.</p>
                         <div className="row">
                             <div className="col-md-6 mt-2">
                                 <div style={{ borderBottom: '1px solid #8080804b', margin: '10px 0', padding: '10px 0' }} className="row align-items-center">
                                     <div className="col-4">
-                                        <img  data-aos="fade-up" data-aos-duration="1000" className="w-100" src={icon1} alt="" />
+                                        <img  data-aos="fade-up" data-aos-duration="2000" className="w-100" src={icon1} alt="" />
                                     </div>
                                     <div className="col-8">
                                         <h3 data-aos="fade-up" data-aos-duration="2000" className="fw-bolder">SOUPS</h3>
@@ -33,7 +33,7 @@ const MenuMini = () => {
                             <div className="col-md-6 mt-2">
                                 <div style={{ borderBottom: '1px solid #8080804b', margin: '10px 0', padding: '10px 0' }} className="row align-items-center">
                                     <div className="col-4">
-                                        <img data-aos="fade-up" data-aos-duration="1000" className="w-100" src={icon2} alt="" />
+                                        <img data-aos="fade-up" data-aos-duration="2000" className="w-100" src={icon2} alt="" />
                                     </div>
                                     <div className="col-8">
                                         <h3 data-aos="fade-up" data-aos-duration="2000" className="fw-bolder">DUMPLINGS</h3>
@@ -46,7 +46,7 @@ const MenuMini = () => {
                             <div className="col-md-6 mt-2">
                                 <div style={{ borderBottom: '1px solid #8080804b', margin: '10px 0', padding: '10px 0' }} className="row align-items-center">
                                     <div className="col-4">
-                                        <img data-aos="fade-up" data-aos-duration="1000" className="w-100" src={icon3} alt="" />
+                                        <img data-aos="fade-up" data-aos-duration="2000" className="w-100" src={icon3} alt="" />
                                     </div>
                                     <div className="col-8">
                                         <h3 data-aos="fade-up" data-aos-duration="2000" className="fw-bolder">SPRING ROLLS</h3>
@@ -57,7 +57,7 @@ const MenuMini = () => {
                             <div className="col-md-6 mt-2">
                                 <div style={{ borderBottom: '1px solid #8080804b', margin: '10px 0', padding: '10px 0' }} className="row align-items-center">
                                     <div className="col-4">
-                                        <img data-aos="fade-up" data-aos-duration="1000" className="w-100" src={icon4} alt="" />
+                                        <img data-aos="fade-up" data-aos-duration="2000" className="w-100" src={icon4} alt="" />
                                     </div>
                                     <div className="col-8">
                                         <h3 data-aos="fade-up" data-aos-duration="2000" className="fw-bolder">DIM SUM</h3>
@@ -70,7 +70,7 @@ const MenuMini = () => {
                             <div className="col-md-6 mt-2">
                                 <div style={{ borderBottom: '1px solid #8080804b', margin: '10px 0', padding: '10px 0' }} className="row align-items-center">
                                     <div className="col-4">
-                                        <img data-aos="fade-up" data-aos-duration="1000" className="w-100" src={icon5} alt="" />
+                                        <img data-aos="fade-up" data-aos-duration="2000" className="w-100" src={icon5} alt="" />
                                     </div>
                                     <div className="col-8">
                                         <h3 data-aos="fade-up" data-aos-duration="2000" className="fw-bolder">NOODLES</h3>
@@ -81,7 +81,7 @@ const MenuMini = () => {
                             <div className="col-md-6 mt-2">
                                 <div style={{ borderBottom: '1px solid #8080804b', margin: '10px 0', padding: '10px 0' }} className="row align-items-center">
                                     <div className="col-4">
-                                        <img data-aos="fade-up" data-aos-duration="1000" className="w-100" src={icon6} alt="" />
+                                        <img data-aos="fade-up" data-aos-duration="2000" className="w-100" src={icon6} alt="" />
                                     </div>
                                     <div className="col-8">
                                         <h3 data-aos="fade-up" data-aos-duration="2000" className="fw-bolder">RICE</h3>

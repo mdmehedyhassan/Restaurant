@@ -6,8 +6,26 @@ import reviewImg1 from '../../../images/img/review-1.jpg';
 import reviewImg2 from '../../../images/img/review-2.jpg';
 import reviewImg3 from '../../../images/img/review-3.jpg';
 const Review = () => {
+    const numberCounterHandler = () => {
+        function counter(id, start, end, duration) {
+            let obj = document.getElementById(id),
+                current = start,
+                range = end - start,
+                increment = end > start ? 1 : -1,
+                step = Math.abs(Math.floor(duration / range)),
+                timer = setInterval(() => {
+                    current += increment;
+                    obj.textContent = current;
+                    if (current === end) {
+                        clearInterval(timer);
+                    }
+                }, step);
+        }
+        counter("count1", 250, 400, 1000);
+        counter("count2", 150, 35, 1000);
+    };
     return (
-        <div style={{ backgroundColor: '#2b2b2b', color: '#e4e4e4', padding: '100px 0' }}>
+        <div onMouseEnter={numberCounterHandler} style={{ backgroundColor: '#2b2b2b', color: '#e4e4e4', padding: '100px 0' }}>
             <div className="container" style={{ padding: '80px 0' }}>
                 <div className="row">
                     <div className="col-md-6">
@@ -21,6 +39,16 @@ const Review = () => {
                             <FontAwesomeIcon icon={faStar} />  <FontAwesomeIcon icon={faStar} /> <FontAwesomeIcon icon={faStar} /> <FontAwesomeIcon icon={faStar} /> <FontAwesomeIcon icon={faStar} />
                         </h5>
                         <p data-aos="fade-up" data-aos-duration="3000">Average customer rating 4.82 (253 votes)</p>
+                    </div>
+                </div>
+                <div style={{color: '#eb6434'}} className="row justify-content-center text-center mt-5 mb-2">
+                    <div className="col-4">
+                        <h1>Customers</h1>
+                        <span id="count1" className="display-4">400</span><span className="display-4">+</span>
+                    </div>
+                    <div className="col-6">
+                        <h1>Items</h1>
+                        <span id="count2" className="display-4">35</span><span className="display-4">+</span>
                     </div>
                 </div>
 
